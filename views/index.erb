@@ -1,11 +1,20 @@
 <html>
   <head></head>
-  <body>
+    <body>
       <p>
         <%= message %>
       <p>
-  </body>
+    </body>
 </html>
+
+
+<head>
+   <style>
+   body {
+     background: <%= check_background_color(message) %>;
+   }
+   </style>
+ </head>
 
 <form>
   <input type='text' name='guess' />
